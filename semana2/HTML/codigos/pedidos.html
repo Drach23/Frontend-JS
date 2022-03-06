@@ -8,8 +8,11 @@
 </head>
 <body>
     <!--formulario para levantar el pedido-->
+    <header>
+        <a href="pasteleria.html">inicio</a>
+    </header>
     <h1>Vamos a tomar su pedido</h1>
-    <form action="pedido.js"></form>
+    <form action="pedido.js" name="pedido">
     <label for="Nombre">Danos tu nombre completo</label><br>
     <input type="text" id="Nombre" name="Nombre" placeholder="nombre">
 <br><br>
@@ -17,18 +20,71 @@
     <input type="number" id="Telefono" name="Telefono" placeholder="telefono">
 <br><br>
     <label for="correo electronico">ingresa tu correo electronico</label><br>
-    <input type="email" name="correo electronico" id="correo electronico" placeholder="correo@domio.com">
+    <input type="email" name="correo electronico" id="correo electronico" placeholder="correo@dominio.com">
 <br><br>
 <label for="descripcion del pastel">ingresa la descripcion de como quieres tu pastel</label><br>
-<input type="text" id="descripcion del pastel" name="descripcion del pastel" placeholder="descripcion pastel"><br><br>
-
-
-<!-- intento combinar sabores de pastel, checkbox con aparicion de seccion para llenar si esta marcada con "si"-->
-<h3>desea combinar sabores de pastel</h3>
-<input type="radio" name="sabores" id="checkbox sabores si"  value="first_radio">SI<label for="checkbox sabores si"></label>
+<input type="text" id="descripcion del pastel" name="descripcion del pastel" placeholder="descripcion pastel">
 <br><br>
-<input type="radio" name="sabores" id="checkbox sabores no" value="second_radio">NO<label for="checkbox sabores no"></label>
-<span class='style17 style14'><div id='comentarios"&c&"' style='display: none;'>&nbsp;</div></span>
+<h3>sabores establecidos</h3>
+<select name="sabores establecidos">
+
+    <option>Chocolate</option>
+    
+    <option>Vainilla con cubierta de chocolate</option>
+    
+    <option>red velvet</option>
+
+    <option> frutas </option>
+
+    <option>tres leches</option>
+
+    <option>zanahoria</option>
+
+
+    <option>ninguno</option>
+    
+    </select>
+<H3>sabores a combinar</H3>
+<p>seleccione los sabores que desea combinar:
+    <br>
+    cada sabor tiene un costo de $225
+</p>
+<label for="vainilla">vainilla</label>
+<input type="checkbox" name="vainilla" id="vainilla"><br><br>
+<label for="chocolate">chocolate</label>
+<input type="checkbox" name="chocolate" id="chocolate"><br><br>
+<label for="mocka">mocka</label>
+<input type="checkbox" name="mocka" id="mocka"><br><br>
+<label for="chocolate blanco">chocolate blanco</label>
+<input type="checkbox" name="chocolate blanco" id="chocolate blanco"><br><br>
+<label for="galletas oreo">galletas oreo</label>
+<input type="checkbox" name="galletas oreo" id="galletas oreo"><br><br>
+<label for="menta">menta</label>
+<input type="checkbox" name="menta" id="menta">
+
+<h3>Adornos para combinar</h3>
+<p>seleccione los adornos que deseea en su pastel:</p>
+<label for="vela cumpleaños"> vela para cumpleaños $25</label>
+<input type="checkbox" name="vela cumpleaños" id="vela cumpleaños">
+<input type="number" name="num vela" id="num vela" placeholder="numero de la vela">
+<br><br>
+
+<label for="muñeco para pastel">muñeco para pastel $350</label>
+<input type="checkbox" name="muñeco para pastel" id="muñeco para pastel">
+<input type="text"  name="descripcion de muñeco" id="descripcion muñeco" placeholder="tipo de muñeco (ej. boda)">
+<input type="number" name="cantidad" id="muñeco cant" placeholder="cuantos?">
+<br><br>
+
+<label for="escrito personalizado">escrito personalizado $18 por letra</label>
+<input type="checkbox" name="escrito personalizado" id="escrito personalizado">
+<input type="text" placeholder="escrito del pastel" id="escrito pastel">
+
+<br><br>
+<input type="reset">
+<input type="submit">
+<br><br>
+</form>
+
 
 </body>
 </html>

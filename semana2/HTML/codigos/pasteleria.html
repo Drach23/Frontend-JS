@@ -4,14 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pasteleria Goloso</title>
+    <link rel="stylesheet" href="diseño.css"/>
+    <title>CAKELAND</title>
   </head>
   <body>
+    <!--javascript-->
+    <!--falta usar comando parseFloat para convertir numeros-->
+    <script type="text/javascript">
+      function obtenerdatos()
+      {
+        var nombre = document.getElementById('Nombre').value;
+        var telefono = document.getElementById('telefono').value;
+        var correo = document.getElementById('correo electronico').value;
+        var descripcionPastel = document.getElementById('descripcion del pastel').value;
+        var sabor_establecido = document.getElementsByName('sabores establecidos').value;
+        var vainilla = document.getElementById('vainilla').value;
+        var chocolate = document.getElementById('chocolate').value;
+        var mocka = document.getElementById('mocka').value;
+        var chocolateBlanco = document.getElementById('chocolate blanco').value;
+        var galletaOreo = document.getElementById('galletas oreo').value;
+        var menta = document.getElementById('menta').value;
+        var velaCumple = document.getElementById('vela cumpleaños').value;
+        var cant_velaCumple = parseFloat(document.getElementById('num vela')).value;
+        var muñeco = document.getElementById('muñeco para pastel').value;
+        var descrip_muñeco = document.getElementById('descripcion muñeco').value;
+        var cant_muñeco = parseFloat(document.getElementById('muñeco cant')).value;
+        var  escritoperso = document.getElementById("escrito personalizado").value;
+        var escrito_pastel = document.getElementById('escrito pastel').value;
+      }
+    </script>
     <!--intro a pasteleria-->
-    <h1>Pasteleria Goloso</h1>
-    <img src="imagenes/Logo.png" alt="Logo de la pasteleria" width="150px" />
-    <h2>Nuestras delicias a tu disposicion:</h2>
-    <hr />
+      <h1>CakeLand</h1>
+      <img src="imagenes/Logo.png" alt="Logo de la pasteleria" width="150px" />
+      <h2>Nuestras delicias a tu disposicion:</h2>
+      <hr />
     <!--menu en forma de lista de los pasteles para ofrecer al cliente-->
     <h3>PASTELES</h3>
     <ul>
@@ -33,7 +59,7 @@
         alt="pastel de vainilla con "
         width="200"
       />
-      <p>pastel de vainilla <br>
+      <p>pastel de vainilla con cubierta de chocolate <br>
         tamaño grande de 18 rebanadas
       </p>
       <br>
@@ -76,9 +102,9 @@
       <li>vela de cumpleaños</li>
       <br>
       <img src="imagenes/vela cumple.jpg" alt="vela de cumpleaños con el numero 2" width="200">
-      <p>velas de cumpleaños de numeros $200 c/u</p>
+      <p>velas de cumpleaños de numeros $25 c/u</p>
       <br>
-      <li>muñeco para pastel $500 c/u</li>
+      <li>muñeco para pastel $350 c/u</li>
       <br>
       <img src="imagenes/mono.jpg" alt="muñeco para pastel" width="200">
       <p>muñecos para pastel de cualquier tipo (bodas, cumpleaños etc)</p>
@@ -104,5 +130,13 @@
     <input type="button" value="realiza tu pedido">
     </a>
     <br><br>
+
+    <hr>
+    <h2>ubicacion y horarios</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.3543731569284!2d-103.29669038559948!3d20.614407507171098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b30c33650a0f%3A0x8080b783522302c3!2sPuerto%20Vallarta%2C%20Lomas%20de%20San%20Pedrito%2C%20San%20Pedro%20Tlaquepaque%2C%20Jal.!5e0!3m2!1ses!2smx!4v1646544235610!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>HORARIOS DE ATENCION:br
+      <br>
+      Lunes a sabado de 10 am a 8 pm
+    </p>
   </body>
 </html>
