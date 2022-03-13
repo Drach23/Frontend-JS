@@ -8,18 +8,17 @@ html {
   font-size: 62.5%;
   color: var(--opaque-blue);
 }
-:root{
-  --blue-king:  #2c4cca;
-    --opaque-blue:  #1f3e72;
-    --light-blue:  #f1f5ff;
-    --yellow:  #ffd012;
-    --off-blue:  #e2e9f9;
-    --white:  #FFFFFF;
-    --off-pink:  #ffe1ea
+:root {
+  --blue-king: #2c4cca;
+  --opaque-blue: #1f3e72;
+  --light-blue: #f1f5ff;
+  --yellow: #ffd012;
+  --off-blue: #e2e9f9;
+  --white: #ffffff;
+  --off-pink: #ffe1ea;
 }
-/*arriba de aqui son las configuraciones de la letra, y HTML en general*/
 
-/*seccion nav*/
+/* Seccion del Nav */
 nav {
   display: flex;
   justify-content: space-between;
@@ -33,7 +32,7 @@ nav {
   z-index: 3;
   padding: 0px 95px;
 }
-nav .nav-left{
+nav .nav-left {
   display: flex;
   align-items: center;
   width: 30%;
@@ -44,7 +43,7 @@ nav .nav-left p {
   color: var(--blue-king);
   font-size: 2.6rem;
 }
-nav .nav-right{
+nav .nav-right {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -52,7 +51,7 @@ nav .nav-right{
   height: 100%;
   font-size: 1.4rem;
 }
-nav .nav-right .nav-list{
+nav .nav-right .nav-list {
   display: flex;
   justify-content: space-around;
 }
@@ -67,27 +66,26 @@ nav .nav-right .nav-button-container {
   justify-content: center;
   align-items: center;
 }
-.blue-button{
+.blue-button {
   width: 120px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  background-color:var(--blue-king);
+  background-color: var(--blue-king);
   color: var(--white);
   text-decoration: none;
   border-radius: 5px;
 }
-/*zona 1 fight virus-*/
 
-.tittle-section{
+/* Zona 1 - Fight Virus */
+.title-section {
   width: 100%;
   height: 650px;
   display: flex;
 }
-
-/*zona 1 -izquierda-*/
+/* Zona 1 - Izquierda */
 .title-section .title-container {
   width: 50%;
   height: 580px;
@@ -101,55 +99,57 @@ nav .nav-right .nav-button-container {
   font-size: 1.4rem;
   margin: 15px 0px;
 }
-.title-section .title-container .yellow-icon-container{
+.title-section .title-container .yellow-icon-container {
   width: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
 }
-.title-section .title-container .yellow-icon-container .small-icon{
+.title-section .title-container .yellow-icon-container .small-icon {
   width: 12px;
   height: 12px;
   margin: 0px 10px;
   padding: 5px;
 }
-.title-section .title-container .yellow-icon-container .shield{
-  background: url(./icon/shield.png) center center/ contain no-repeat;
+.title-section .title-container .yellow-icon-container .shield {
+  background: url(./Icon/shield.png) center center / contain no-repeat;
 }
-.title-section .title-container .yellow-icon-container .star{
-  background: url(./icon/star-2.png) center center/ contain no-repeat;
+.title-section .title-container .yellow-icon-container .star {
+  background: url(./Icon/estrella.png) center center / contain no-repeat;
 }
-.title-section .title-container .schedule-container{
+.title-section .title-container .schedule-container {
   width: 300px;
   display: flex;
   justify-content: right;
   align-items: center;
   margin-top: 50px;
 }
-.title-section .title-container .schedule-container span{
+.title-section .title-container .schedule-container span {
   width: 12px;
   height: 12px;
   margin: 0px 10px;
   padding: 5px;
-  background: url(./icon/time.png) center center/ contain no-repeat;
+  background: url(./Icon/time.png) center center / contain no-repeat;
 }
-.title-section .title-container .schedule-container p{
+.title-section .title-container .schedule-container p {
   font-size: 1.6rem;
   font-weight: 700;
 }
-/*zona 1 -derecha-*/
-.title-section .title-image{
+
+/* Zona 1  - Derecha */
+.title-section .title-image {
   height: 650px;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 .title-section .title-image img {
   width: 100%;
   object-fit: cover;
 }
-/*zona 1 -floating card-*/
-.floating-card{
+
+/* Zona 1 - Floating card */
+.floating-card {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -165,32 +165,352 @@ nav .nav-right .nav-button-container {
   padding: 15px 50px;
   border-radius: 5px;
 }
-.floating-card-left{
+.floating-card-left {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
-.floating-card-icon{
+.floating-card-icon {
   width: 12px;
   height: 12px;
   align-self: baseline;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 3px 4px;;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 3px 4px;
   margin: 5px 10px 0px 20px;
   padding: 1px;
   background: center center / contain no-repeat;
 }
-.pin-icon{
-  background-image: url(./icon/placeholder-filled-point.png);
+.pin-icon {
+  background-image: url(./Icon/pin.png);
 }
-.calendar-icon{
-  background-image: url(./icon/calendar.png);
+.calendar-icon {
+  background-image: url(./Icon/calendar.png);
 }
-.shot-icon{
-  background-image: url(./icon/pencil.png);
+.shot-icon {
+  background-image: url(./Icon/pencil.png);
 }
-.floating-card-right{
+.floatin-card-right {
   justify-self: center;
   padding: 10px;
+}
+/*zona 2 - Logos*/
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  padding: 30px 100px;
+}
+.logos .logo-opaque img {
+  display: inline-block;
+  width: 200px;
+  opacity: 0.5;
+  margin: 0px 30px;
+}
+/*zona 3 - reasons cards*/
+.reasons{
+  width: 100%;
+  padding: 40px 80px;
+}
+.reasons-text h2{
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.reasons-text p{
+  width: 300px;
+  font-size: 1.6rem;
+  margin: 15px 0px;
+}
+/*reasons cards*/
+.reasons-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0px;
+  padding: 0px 30px;
+}
+.reasons-card {
+  width: 20%;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 3px 5px;
+  padding: 20px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+.reasons-card-icon-minimize{
+  width: 35px;
+  height: 35px;
+  margin-bottom: 15px;
+  padding: 2px;
+  background: url(./Icon/reducir.png) center center / contain no-repeat;
+}
+.reasons-card-icon-escudo{
+  width: 35px;
+  height: 35px;
+  margin-bottom: 15px;
+  padding: 2px;
+  background: url(./Icon/encrypted.png) center center / contain no-repeat;
+}
+.reasons-card-icon-people{
+  width: 35px;
+  height: 35px;
+  margin-bottom: 15px;
+  padding: 2px;
+  background: url(./Icon/group.png) center center / contain no-repeat;
+}
+.reasons-card-icon-inmunity{
+  width: 35px;
+  height: 35px;
+  margin-bottom: 15px;
+  padding: 2px;
+  background: url(./Icon/inmunidad.png) center center / contain no-repeat;
+}
+.reasons-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+.reasons-card p {
+  font-size: 1.2rem;
+}
+/*zona 4 - prep before vaccination*/
+.prep {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+  /* Section 4 - left */
+.prep-image {
+  width: 47%;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.prep-image img {
+  height: 100%;
+  object-fit: cover;
+}
+  /* Section 4 - right */
+.prep-container {
+  width: 50%;
+  height: 650px;
+}
+.prep-container h2 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin: 50px 0px 20px;
+}
+.prep-container p {
+  font-size: 1.6rem;
+}
+.prep-list-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  padding: 20px;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
+}
+.list-icon-1 {
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px;
+  background: url(./Icon/beer.png) center center / contain no-repeat;
+}
+.list-icon-2 {
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px;
+  background: url(./Icon/yoga.png) center center / contain no-repeat;
+}
+.list-icon-3 {
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px;
+  background: url(./Icon/healthy-heart.png) center center / contain no-repeat;
+}
+.list-icon-4 {
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px;
+  background: url(./Icon/moon.png) center center / contain no-repeat;
+}
+.list-icon-5 {
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px;
+  background: url(./Icon/exercise.png) center center / contain no-repeat;
+}
+.list-item p {
+  width: 260px;
+}
+.drop-icon {
+  width: 15px;
+  height: 15px;
+  justify-self: right;
+  margin: 0px 15px;
+  background: url(./Icon/abajo.png) center center / contain no-repeat;
+}
+/* zona 5 - Contact info cards */
+.contact {
+  width: 100%;
+  height: 750px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+  /* zona 5 - Contact left */
+.contact-container {
+  width: 50%;
+  height: 650px;
+  padding-left: 90px;
+}
+.contact-container h2 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin: 50px 0px 20px;
+}
+.contact-container > p {
+  font-size: 1.6rem;
+  margin-bottom: 120px;
+}
+
+  /* Contact Cards */
+.contact-card-container {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+.contact-card {
+  width: 180px;
+  height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.contact-card-top {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.card-icon-call {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url(./Icon/phone-call.png);
+}
+.card-icon-chat {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url(./Icon/chat.png);
+}
+.card-icon-videocall {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url(./Icon/videocall.png);
+}
+.card-icon-message{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url(./Icon/email.png);
+}
+.contact-card div + div {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.opaque-button {
+  color: var(--blue-king);
+  background-color: var(--off-blue);
+}
+.card-text-container p + p {
+  font-size: 1rem;
+}
+  
+  /* zona 5 - Contact right */
+.contact-image {
+  width: 47%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.contact-image img {
+  height: 90%;
+  object-fit: cover;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 250px;
+  padding: 40px 90px 10px;
+  font-size: 1.3rem;
+  background-color: var(--light-blue);
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  height: 80%;
+}
+.goal-side {
+  width: 150px;
+}
+.goal-side h3 {
+  font-size: 2.4rem;
+  color: var(--blue-king);
+  margin-bottom: 15px;
+}
+
+.about-side {
+  width: 650px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.4rem;
+}
+.about-side ul {
+  list-style: none;
+  margin: 0 25px;
+}
+.about-side ul li {
+  margin: 10px 0;
+}
+.about-side ul li b {
+  font-size: 1.6rem;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom div p {
+  display: inline;
+  margin: 0 10px;
 }
